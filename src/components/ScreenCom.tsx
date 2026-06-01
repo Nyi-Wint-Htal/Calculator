@@ -1,11 +1,16 @@
-const ScreenCom = () => {
+type ScreenCom = {
+  expression: string;
+};
+
+const ScreenCom = ({ expression }: ScreenCom) => {
   return (
     <div className="w-full">
-      <h1 className="text-3xl font-bold">Calculator</h1>
-      <h2 className="text-sm mb-5 font-medium">Nintendo Switch Style</h2>
+      <h1 className="text-3xl font-bold">Horizon Calc</h1>
+      <h2 className="text-sm mb-5 font-medium">
+        Clean Calculations. Clear Results.
+      </h2>
       <div className="screenStyle">
-        <p className="text-xs">99x</p>
-        <p className="text-4xl">99</p>
+        <p className="text-4xl">{expression || "0"}</p>
       </div>
     </div>
   );
