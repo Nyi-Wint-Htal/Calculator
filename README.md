@@ -10,14 +10,14 @@ This project was built as part of my web development learning journey.
 
 ## Features
 
-✅ Basic arithmetic operations
+Basic arithmetic operations
 
 - Addition (+)
 - Subtraction (-)
 - Multiplication (×)
 - Division (÷)
 
-✅ Keyboard support
+Keyboard support
 
 - Number keys (0–9)
 - Operators (+, -, *, /)
@@ -25,13 +25,13 @@ This project was built as part of my web development learning journey.
 - Backspace to delete
 - Escape to clear
 
-✅ Input validation
+Input validation
 
 - Prevents multiple operators in sequence
 - Prevents multiple decimal points in the same number
 - Handles invalid expressions gracefully
 
-✅ Calculator controls
+Calculator controls
 
 - Clear (AC)
 - Delete last character
