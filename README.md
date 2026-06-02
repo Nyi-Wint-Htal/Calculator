@@ -1,73 +1,105 @@
-# React + TypeScript + Vite
+# Horizon Calc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern calculator built with React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Horizon Calc is a simple calculator application created to practice React fundamentals, state management, keyboard events, TypeScript, and component-based architecture.
 
-## React Compiler
+This project was built as part of my web development learning journey.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+✅ Basic arithmetic operations
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Addition (+)
+- Subtraction (-)
+- Multiplication (×)
+- Division (÷)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ Keyboard support
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Number keys (0–9)
+- Operators (+, -, *, /)
+- Enter to calculate
+- Backspace to delete
+- Escape to clear
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+✅ Input validation
+
+- Prevents multiple operators in sequence
+- Prevents multiple decimal points in the same number
+- Handles invalid expressions gracefully
+
+✅ Calculator controls
+
+- Clear (AC)
+- Delete last character
+- Percentage (%)
+- Positive/Negative toggle (±)
+
+## Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Font Awesome
+
+## Screenshots
+
+### Main Interface
+
+<img width="1440" height="810" alt="Screenshot 2026-06-02 at 2 56 42 PM" src="https://github.com/user-attachments/assets/69357837-38af-4d11-a232-9694c6ea6b7b" />
+<img width="1440" height="807" alt="Screenshot 2026-06-02 at 2 56 53 PM" src="https://github.com/user-attachments/assets/321fd92a-3768-4949-8ebb-d38b42efe7bf" />
+
+
+## What I Learned
+
+This project helped me learn:
+
+- React state management with useState
+- useEffect and cleanup functions
+- Keyboard event handling
+- Component communication through props
+- TypeScript prop typing
+- Array methods and string manipulation
+- Preventing invalid user input
+- Git and GitHub workflows
+
+## Challenges
+
+Some challenges I solved during development:
+
+- Preventing duplicate operators
+- Preventing multiple decimal points
+- Handling keyboard shortcuts
+- Cleaning up event listeners correctly
+- Display overflow management
+
+## Future Improvements
+
+- Calculation history
+- Scientific calculator mode
+- Dark mode
+- Better mobile responsiveness
+- Replace eval() with a custom parser
+- Memory functions (M+, M-, MR, MC)
+
+## Installation
+
+```bash
+git clone https://github.com/Nyi-Wint-Htal/calculator.git
+cd calculator
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Live Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+https://calculator-ashy-gamma.vercel.app/
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Author
+
+Phoenix
+Computer Science Student
