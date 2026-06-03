@@ -77,14 +77,6 @@ Some challenges I solved during development:
 - Cleaning up event listeners correctly
 - Display overflow management
 
-## Future Improvements
-
-- Calculation history
-- Scientific calculator mode
-- Dark mode
-- Better mobile responsiveness
-- Replace eval() with a custom parser
-- Memory functions (M+, M-, MR, MC)
 
 ## Installation
 
